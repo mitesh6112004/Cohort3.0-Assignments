@@ -1,0 +1,357 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  font-family:Arial, Helvetica, sans-serif;
+  background:#f4f5fb;
+
+  display:flex;
+  justify-content:center;
+
+  padding:20px;
+}
+
+.main{
+  width:100%;
+  max-width:1350px;
+
+  background:#f7f8ff;
+
+  border-radius:30px;
+
+  padding:25px 35px;
+  
+
+  box-shadow:0 20px 40px rgba(0,0,0,0.08);
+
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+
+/* ================= NAV ================= */
+
+nav{
+  width:100%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav i{
+  font-size:24px;
+
+  background:white;
+
+  padding:14px;
+
+  border-radius:15px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+
+  cursor:pointer;
+}
+
+.logo img{
+  width:200px;
+}
+
+/* ================= SEARCH ================= */
+
+.head{
+  width:100%;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.search-box{
+  width:450px;
+
+  background:white;
+
+  padding:16px 20px;
+
+  border-radius:50px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+}
+
+.search-box i{
+  font-size:20px;
+  color:gray;
+}
+
+.search-box input{
+  width:100%;
+
+  border:none;
+  outline:none;
+
+  font-size:16px;
+
+  background:transparent;
+}
+
+.filter{
+  background:white;
+
+  padding:16px 25px;
+
+  border-radius:50px;
+
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  box-shadow:0 5px 15px rgba(0,0,0,0.05);
+
+  cursor:pointer;
+}
+
+/* ================= CARDS ================= */
+
+.cards{
+  width:100%;
+
+  display:flex;
+  gap:25px;
+
+  flex-wrap:wrap;
+}
+
+.card{
+  flex:1;
+  min-width:250px;
+
+  background:white;
+
+  border-radius:25px;
+
+  padding:20px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card-top{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:15px;
+}
+
+.card-top p{
+  color:gray;
+  font-weight:bold;
+}
+
+.heart{
+  width:40px;
+  height:40px;
+
+  border-radius:50%;
+
+  background:#f7f7f7;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  cursor:pointer;
+}
+
+.pokemon-img{
+  width:100%;
+  height:220px;
+
+  object-fit:contain;
+}
+
+.card h2{
+  margin:15px 0;
+  color:#222;
+}
+
+.bottom{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.type{
+  padding:8px 16px;
+
+  border-radius:30px;
+
+  font-size:13px;
+  font-weight:bold;
+
+  color:white;
+}
+
+.grass{
+  background:#65c466;
+}
+
+.steel{
+  background:#5e6b82;
+}
+
+.fire{
+  background:#f06d4f;
+}
+
+.water{
+  background:#5f8df5;
+}
+
+.arrow{
+  width:40px;
+  height:40px;
+
+  border-radius:50%;
+
+  background:#f5f5f5;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  cursor:pointer;
+}
+
+/* ================= FEATURES ================= */
+
+.features{
+  width:100%;
+
+  background:white;
+
+  border-radius:25px;
+
+  padding:30px;
+
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+
+  box-shadow:0 10px 25px rgba(0,0,0,0.05);
+
+  flex-wrap:wrap;
+}
+
+.feature-box{
+  flex:1;
+  min-width:200px;
+
+  display:flex;
+  gap:15px;
+  align-items:center;
+}
+
+.feature-icon{
+  width:55px;
+  height:55px;
+
+  border-radius:50%;
+
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  font-size:24px;
+
+  color:white;
+}
+
+.blue{
+  background:#6b7cff;
+}
+
+.green{
+  background:#65c466;
+}
+
+.yellow{
+  background:#f7b928;
+}
+
+.purple{
+  background:#bb7cff;
+}
+
+.feature-text h3{
+  margin-bottom:5px;
+}
+
+.feature-text p{
+  font-size:14px;
+  color:gray;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  text-align:center;
+  color:gray;
+  font-size:14px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:900px){
+
+  .head{
+    flex-direction:column;
+    gap:20px;
+  }
+
+  .search-box{
+    width:100%;
+  }
+
+  .filter{
+    width:100%;
+    justify-content:center;
+  }
+
+}
+
+@media (max-width:600px){
+
+  .logo img{
+    width:150px;
+  }
+
+  nav i{
+    font-size:20px;
+    padding:10px;
+  }
+
+  .main{
+    padding:20px;
+  }
+
+}
