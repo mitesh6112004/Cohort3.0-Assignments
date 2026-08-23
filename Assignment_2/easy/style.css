@@ -1,0 +1,104 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,body{
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  body{
+      background:#f4f4f4;
+      color:#750606;
+      font-family: 'Montserrat', sans-serif;
+    }
+  .main{
+    width: 100%;
+    max-width: 1400px;
+
+    margin: auto;
+    padding: 40px;
+  }
+
+a {
+  color: inherit;        /* Uses the parent element's text color */
+ /* Removes underline */
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+  .first{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
+  }
+
+ .header-img {
+  width: 110px;          /* Set desired width */
+  height: 60px;         /* Set desired height */
+  object-fit: cover;    /* Prevent distortion */
+  vertical-align: middle;
+  border-radius: 50%;   /* Optional: makes image circular */
+  margin: 0 8px;
+}
+  .logo{
+    width: 70px;
+  }
+
+  .second{
+    display: flex;
+    align-items: flex-end;
+    justify-content:space-between;
+    gap: 400px;
+  }
+
+  .image{
+    width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  }
+
+  .left-panel {
+  width: 20%;
+}
+
+.right-panel{
+  width: 75%;
+  margin-left: -140px; 
+  text-align: left;
+}
+
+.final{
+  margin-top: 50px;
+  text-align: center;
+}
+
+
+
+.fade-text {
+  opacity: 0.5; /* Adjust value from 0 to 1 */
+}
+.para{
+  max-width: 300px;        /* Set the paragraph width */
+  text-align: justify; /* Align text evenly on both sides */
+  line-height: 1;    /* Optional: improves readability */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h1{
+  font-size: 65px;
+}
+
+.pa{
+  max-width: 600px;     /* controls paragraph width */
+  margin: 20px auto 0;  /* centers the block */
+  text-align: center;   /* center text */
+  line-height: 1.5;
+  font-size: 14px;
+}

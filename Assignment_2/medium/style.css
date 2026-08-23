@@ -1,0 +1,157 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+
+    display: flex;
+    justify-content: center;   /* Horizontal center */
+    padding: 40px 20px;        /* Space around the container */
+}
+
+main{
+    width:100%;
+    max-width: 1400px;
+    
+}
+
+.h1{
+    font-size: 60px;
+    text-align: center;
+}
+
+.cards{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly; 
+    
+}
+.card-img{
+     width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.card span{
+    border: orange solid 1px;
+    padding: 9px;
+    border-radius: 30px;
+    
+}
+.card span i{
+    color: orange;
+    padding: 4px;
+    width: 0.1px;
+}
+
+.card{
+    border: orange 2px solid; 
+    border-radius: 25px;
+    background-color: transparent;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    padding: 30px;
+    box-shadow:
+  0 0 20px rgba(255, 136, 0, 0.15),
+  0 0 40px rgba(255, 136, 0, 0.08);
+}
+
+
+
+.main-card {
+  display: flex;
+  align-items: center;      /* Vertically align image and content */
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 60px;
+  padding: 40px;
+  background: #0d0d0d;
+  border: 1px solid orange;
+  border-radius: 20px;
+  margin: 70px;
+   align-items: flex-start;
+   box-shadow:
+  0 0 20px rgba(255, 136, 0, 0.15),
+  0 0 40px rgba(255, 136, 0, 0.08);
+}
+
+.main-card img{
+      width: 350px;             /* Fixed image width */
+  height: 250px;            /* Fixed image height */
+  object-fit: cover;        /* Keeps image proportion */
+  border-radius: 20px;
+}
+
+.main-card h4{
+    color: orange;
+    letter-spacing: 3px;
+     font-size: 14px;
+      margin-bottom: 10px;
+}
+.main-card h6 {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.main-card button{
+    background-color: transparent;
+    color: orange;
+    border: orange 2px solid;
+    padding: 10px 12px;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+.main-card button i{
+    color: orange;
+    padding:10px;
+}
+.seprator{
+    border: orange solid 1px;
+    box-shadow:
+  0 0 20px rgba(255, 136, 0, 0.15),
+  0 0 40px rgba(255, 136, 0, 0.08);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+}
+ul{
+    display: flex;
+   padding: 0;
+   margin: 0;
+   gap: 30px;
+
+}
+ul li::marker {
+  color: orange;
+}
+
+.social i{
+  color: orange;
+  border: orange 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.social{
+    gap: 160px;
+}
+
+.seprator-1 {
+    border: 1px solid orange;
+    width: 60px;
+    margin: 10px auto;
+    box-shadow:
+        0 0 20px rgba(255, 136, 0, 0.15),
+        0 0 40px rgba(255, 136, 0, 0.08);
+}
