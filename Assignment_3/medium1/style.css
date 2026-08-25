@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+main{
+    background-color: #2C2832;
+    height: 100%;
+    width: 70%;
+    padding: 5px 20px;
+     font-family: 'Henshin', 'Shinjuku', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+main .main-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70%;
+    width: 100%;
+     background-image: url('./images/bg.png');
+    background-size: cover;
+    background-position: center;
+     background-repeat: no-repeat;
+    clip-path: ellipse(90% 100% at 50% 0%);
+   
+}
+nav{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+}
+nav .left{
+    width: 100px;
+}
+nav .center{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap:15px;
+    width: 50%;
+}
+
+nav .left{
+    position: relative;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+.left img{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    left: 64%;
+    top: 0;
+}
+.left h1{
+    font-size: 8px;
+    position: absolute;
+    top: 24px;
+    font-weight: 600;
+}
+
+.center p{
+    font-size: 8px;
+    font-weight: 300;
+}
+
+.right svg{
+    height: 20px;
+    width: 20px;
+}
+nav .right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 20%;
+    height: 100%;
+    gap: 10px;
+    margin-left: 40px;
+}
+.vision{
+    background-color: #7D6C60;
+    height: 30px;
+    position: relative;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.tele{
+    background-color: white;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+.discord{
+   background-color: white;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    height: 20px;
+}
+.bottom{
+    position: absolute;
+    top:70%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    /* border: 2px solid black; */
+    margin-left: 65px;
+}
+.heading{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 25px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    color: #f2f2f2;
+    background-color: transparent;
+}
+.bottom .content{
+    display: flex;
+    align-items: flex-start;
+    /* justify-content: space-between; */
+    gap: 30px;
+    width: 700px;
+    height: 80px;
+    /* border: 2px solid white; */
+    margin-top: 10px;
+    margin-left: 80px;
+}
+.para{
+    font-size: 11px;
+    font-weight: 400;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: left;
+    width: 250px;
+    line-height: 1.5;
+    text-transform: none;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.8);
+    width: 350px;
+}
+.main-part1{
+    position: absolute;
+    top: 22%;
+    left: 22%;
+}
+.main-part1 h1{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    font-weight: 600;
+
+    color: white;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    line-height: 0.9;
+}
+.main-part1 p{
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+    text-transform: none;
+
+    color: rgba(255,255,255,0.9);
+}
+
+
+.main-part2{
+    position: absolute;
+    top: 25%;
+    left: 59%;
+}
+.main-part2 h1{
+    font-family: 'Cinzel', serif;
+    font-size: 50px;
+    font-weight: 600;
+
+    color: white;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    line-height: 0.9;
+}
+.main-part2 p{
+    font-family: 'Cormorant Garamond', serif;
+
+    font-size: 20px;
+    font-weight: 500;
+
+    letter-spacing: 1px;
+    text-transform: none;
+
+    color: rgba(255,255,255,0.9);
+}
+.main-img{
+    position: absolute;
+    top: 14%;
+    left: 18%;
+}
