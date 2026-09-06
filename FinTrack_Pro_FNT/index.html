@@ -1,0 +1,85 @@
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Login - Fintrack pro</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+
+  <div id="auth-container">
+
+
+    <form id="loginForm">
+    <div id="login-box" style="display:flex">
+
+          <h2>Welcome Back</h2>
+          <p>Login to FinTrack Pro</p>
+
+          <label for="loginUser">Username</label>
+          <input id="loginUser" placeholder="Username"  autocomplete="username">
+
+          <label for="loginPass">Password</label>
+          <input id="loginPass" 
+                type="password" 
+                placeholder="Password"
+                autocomplete="current-password">
+
+
+          <button id="loginBtn" type="submit">
+              Login
+          </button>
+
+
+          <p>
+            Don't have an account?
+            <span id="showRegister">
+              Register here
+            </span>
+          </p>
+
+        </div>
+      </form>
+
+
+
+      <form id="registerForm">
+      <div id="register-box" style="display:none">
+
+          <h2>Create Account</h2>
+          <p>Join FinTrack Pro</p>
+
+          <label for="regUser">Choose a Username</label>
+          <input id="regUser" placeholder="Username"  autocomplete="username">
+
+          <label for="regPass">Password</label>
+          <input id="regPass" 
+                type="password" 
+                placeholder="Password"
+                autocomplete="new-password">
+
+
+          <button id="registerBtn" type="submit">
+              Register
+          </button>
+
+
+          <p>
+            Already have an account?
+            <span id="showLogin">
+              Login here
+            </span>
+          </p>
+
+
+        </div>
+      </form>
+
+  </div>
+
+
+  <script src="auth.js"></script>
+
+  </body>
+  </html>
