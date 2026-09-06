@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>TaskFlow | Task Manager</title>
+
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main class="container">
+      <section class="top-bar">
+        <div>
+          <h2>Task Manager</h2>
+        </div>
+
+        <div class="theme-toggle">
+          <button id="themeToggle">
+            <i class="ri-moon-clear-line"></i>
+          </button>
+        </div>
+      </section>
+
+
+
+      <section class="task-form-card">
+        <div class="section-heading">
+          <h3>Create New Task</h3>
+
+          <p>Fill in the information below and click Add Task.</p>
+        </div>
+
+        <form id="taskForm">
+          <div class="input-group">
+            <label> Task Title </label>
+
+            <input
+              type="text"
+              id="taskTitle"
+              placeholder="Example : Learn DOM Manipulation"
+            />
+          </div>
+
+          <div class="input-group">
+            <label> Category </label>
+
+            <select id="category">
+              <option>Work</option>
+              <option>Study</option>
+              <option>Personal</option>
+              <option>Health</option>
+              <option>Shopping</option>
+            </select>
+          </div>
+
+          <button class="add-task-btn">
+            <i class="ri-add-line"></i>
+
+            Add Task
+          </button>
+        </form>
+      </section>
+
+      <section class="toolbar">
+        <div class="search-box">
+          <i class="ri-search-line"></i>
+
+          <input type="text" id="searchInput" placeholder="Search tasks..." />
+        </div>
+
+        <select id="filterCategory">
+          <option>All Categories</option>
+          <option>Work</option>
+          <option>Study</option>
+          <option>Personal</option>
+          <option>Health</option>
+          <option>Shopping</option>
+        </select>
+      </section>
+
+      <section class="stats">
+        <div class="stat-card">
+          <div class="icon">
+            <i class="ri-list-check-3"></i>
+          </div>
+
+          <div>
+            <h3 id="totalTasks">0</h3>
+            <span>Total Tasks</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon green">
+            <i class="ri-checkbox-circle-fill"></i>
+          </div>
+
+          <div>
+            <h3 id="completedTasks">0</h3>
+            <span>Completed</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon orange">
+            <i class="ri-time-line"></i>
+          </div>
+
+          <div>
+            <h3 id="pendingTasks">0</h3>
+            <span>Pending</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="icon purple">
+            <i class="ri-folder-3-line"></i>
+          </div>
+
+          <div>
+            <h3 id="categoryCount">0</h3>
+            <span>Categories</span>
+          </div>
+        </div>
+      </section>
+      <section class="task-section">
+        <div class="section-heading">
+          <div>
+            <h2>Your Tasks</h2>
+          </div>
+
+          <button class="clear-btn" id="clearAll">
+            <i class="ri-delete-bin-6-line"></i>
+
+            Clear All
+          </button>
+        </div>
+
+      
+
+        <div id="taskContainer" class="task-container">
+     
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
